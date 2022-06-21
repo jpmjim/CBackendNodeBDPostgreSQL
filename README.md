@@ -54,3 +54,19 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
         - dejar de correr servicio "docker-compose down"
         - para mantener la informacion introducida debemos asignarle un volumen al contenedor
         - https://hub.docker.com/_/postgres
+  ## Explorando Postgres: interfaces gráficas vs. terminal
+      Terminal
+      - Conectarnos db que corre dentro de un contenedor por la terminal "docker-compose exec postgres bash"
+      - conectar al host y la base de datos "psql -h localhost -d my_store -U jimmy" estructura dentro de la bd comando \d+, salirnos de la db \q, salir del contenedor exit.
+
+      Modo grafico 
+      - PGAdmin "https://www.pgadmin.org/" administrar toda nuestra base de datos la cual tambien nos permite correr consultas de forma sql.
+      - Podemos correrlo en Docker como un nuevo servicio. Configuramos dento de docker-compose.yml y no necesita establecer un volumen.
+
+      Para levantar el servicio de pgadmin ejecutamos el comando docker-compose up -d pgadmin.Verificamos con docker-compose ps, nos vamos a localhost:5050 de forma grafica.
+      Debemos decirle a que servidor queremos conectarnos Object/Register/Server.
+
+      - docker ps -- nos muestra mas detalles de los contenedores.
+      - tomamos id del contenedor de la bd y lo inspeccionamos docker inspect "id" donde tendremos toda la información del contenedor.
+
+      -Despues de conectarnos crearemos primera tabla llamada "tasks".
