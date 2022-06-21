@@ -45,4 +45,12 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
   - sudo apt-get update
   - sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
   - Recibir un error de GPG al ejecutar apt-get update "sudo chmod a+r /etc/apt/keyrings/docker.gpg".
-  - 
+
+  ## Configuración de Postgres en Docker
+      Los contenedores no tienen estado. Todas las configuraciones nuestro contendor estan en docker-compose.yml
+      - Lanzar posgres dentro de un contenedor en la terminal en segundo plano.
+        - docker-compose up -d postgres --> "nombre servicio"
+        - ver si el servicio esta en funcionamiento docker-compose ps
+        - dejar de correr servicio "docker-compose down"
+        - para mantener la informacion introducida debemos asignarle un volumen al contenedor
+        - https://hub.docker.com/_/postgres
