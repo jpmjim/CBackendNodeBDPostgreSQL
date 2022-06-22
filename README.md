@@ -78,3 +78,7 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - Creamos nuestra carpeta de librerias "libs" que se encargan la conexion a terceros sean APIS o Base de Datos.
       - Para solucionar error creer un volumen para el pgadmin 
       - Tambien debemos iniciar el proyecto npm run start para comprobarlo en insomnia.
+  
+  ## Manejando un Pool de conexiones
+      - Request matener una sola conexion "https://node-postgres.com/features/pooling"
+      - Creamos un archivo postgres.pool.js lo usaremos en el servicio de prodcutos.
