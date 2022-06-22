@@ -82,3 +82,8 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
   ## Manejando un Pool de conexiones
       - Request matener una sola conexion "https://node-postgres.com/features/pooling"
       - Creamos un archivo postgres.pool.js lo usaremos en el servicio de prodcutos.
+
+  ## Variables de ambiente en Node.js
+      - Dentro de nuestro archivo config.js tendremos configuracion base de las variables de entorno.
+      - Dentro de .env tiene los accesos localmente forma seguro de trabajar el cual no va al repositorio. "npm install dotenv" usamos dentro del archivo /config/config.js
+      - Pero dentro del archivo ".env.expample" el cual si va al repo decimos cual es información que deben tener para poder acceder al proyecto.
