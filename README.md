@@ -59,6 +59,8 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - Conectarnos db que corre dentro de un contenedor por la terminal "docker-compose exec postgres bash"
       - conectar al host y la base de datos "psql -h localhost -d my_store -U jimmy" estructura dentro de la bd comando \d+, salirnos de la db \q, salir del contenedor exit.
 
+      "https://forums.docker.com/t/pgadmin-container-shuts-down-automatically-after-20-seconds/125730/3"
+      
       Modo grafico 
       - PGAdmin "https://www.pgadmin.org/" administrar toda nuestra base de datos la cual tambien nos permite correr consultas de forma sql.
       - Podemos correrlo en Docker como un nuevo servicio. Configuramos dento de docker-compose.yml y no necesita establecer un volumen.
@@ -70,3 +72,9 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - tomamos id del contenedor de la bd y lo inspeccionamos docker inspect "id" donde tendremos toda la información del contenedor.
 
       -Despues de conectarnos crearemos primera tabla llamada "tasks".
+  
+  ## Integración de node-postgres
+      - Dentro de esta pagina podemos ver que es una  conexion de modulos."https://node-postgres.com/" instalamos npm install pg
+      - Creamos nuestra carpeta de librerias "libs" que se encargan la conexion a terceros sean APIS o Base de Datos.
+      - Para solucionar error creer un volumen para el pgadmin 
+      - Tambien debemos iniciar el proyecto npm run start para comprobarlo en insomnia.
