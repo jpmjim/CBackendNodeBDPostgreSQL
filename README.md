@@ -92,7 +92,18 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       Un ORM es un modelo de programación que permite mapear las estructuras de una base de datos relacionales. Usaremps el ORM de Sequelize.
 	    - Instalamos el ORM "npm install --save sequelize"
 		- Drivers para PostgreSQL "npm install --save pg pg-hstore"
+
   ## Tu primer modelo en Sequelize
 		- Vamos a ver el esquema que va tener la base de datos. Esquema de tipos en la base de datos.
+
   ## Crear, actualizar y eliminar
         - De datos dentro de la tabla de los usuarios.
+        
+  ## Cambiando la base de datos a MySQL
+        - Cambiamos la base de datos a MySQL. Donde crearemos un contenedor donde correra MySQL.
+        - Creamos nuestro volumen para datos de myslq y lo ignoramos.
+        - De forma grafica utilizaremos phpmyadmin.
+        - Levantamo nuestros servicios docker-compose up -d mysql y docker-compose up -d phpmyadmin.
+        - Para conectarnos con mysql debemos instalar el driver de mysql "npm install --save mysql2" cambios el puerto y el usuario en ".env" y en libs/sequilize.js el motor postgres por mysql.
+        -ejecutamos nuestro project con npm run start o dev.
+        - revisamos en insomnia y localhost:8080/phpmyadmin.
