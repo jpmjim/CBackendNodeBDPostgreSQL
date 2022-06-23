@@ -87,3 +87,8 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - Dentro de nuestro archivo config.js tendremos configuracion base de las variables de entorno.
       - Dentro de .env tiene los accesos localmente forma seguro de trabajar el cual no va al repositorio. "npm install dotenv" usamos dentro del archivo /config/config.js
       - Pero dentro del archivo ".env.expample" el cual si va al repo decimos cual es información que deben tener para poder acceder al proyecto.
+
+  ## ¿Qué es un ORM? Instalación y configuración de Sequelize ORM
+      Un ORM es un modelo de programación que permite mapear las estructuras de una base de datos relacionales. Usaremps el ORM de Sequelize.
+			- Instalamos el ORM "npm install --save sequelize"
+			- Drivers para PostgreSQL "npm install --save pg pg-hstore"
