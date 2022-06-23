@@ -107,7 +107,14 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - Para conectarnos con mysql debemos instalar el driver de mysql "npm install --save mysql2" cambios el puerto y el usuario en ".env" y en libs/sequilize.js el motor postgres por mysql.
       -ejecutamos nuestro project con npm run start o dev.
       - revisamos en insomnia y localhost:8080/phpmyadmin.
+
   ## ¿Qué son las migraciones? Migraciones en Sequelize ORM
       - Las migraciones son una forma de crear una base de datos con un esquema especifico. Las migraciones de base de datos comunes en los frameworks de programación como MySQL, SQLite, PostgreSQL, Oracle, etc.
       - Correr migraciones instalamos el ORM "npm install --save-dev sequelize-cli" como dependencia de desarrolo y un archivo de ".sequelizerc".
 
+  ## Configurando y corriendo migraciones con npm scripts
+      - No crea las migraciones de manera automatica al hacer alguna modificacion "no genera migraciones".
+      - Configuración para que las migraciones detecten un cambio y las corra de manera automatica.
+      - Scripts para correr migraciones dentro de nuestro package.json.
+      - Nos vamos a la terminal y la ejecutamos npm run migrations:generate "--name" ejemplo npm run migrations:generate create-user el cual se almacena dentro de la carpeta de migrations donde tendremos que definir manualmente que migraciones queremos hacer.
+      - Borramos nuestras tablas de pgadmin y probamos nuestras migraciones y ejecutamos npm run migrations:run si ocurre un error cambiar los datos dentro de ".env".
