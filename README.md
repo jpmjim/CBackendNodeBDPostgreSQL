@@ -118,3 +118,8 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - Scripts para correr migraciones dentro de nuestro package.json.
       - Nos vamos a la terminal y la ejecutamos npm run migrations:generate "--name" ejemplo npm run migrations:generate create-user el cual se almacena dentro de la carpeta de migrations donde tendremos que definir manualmente que migraciones queremos hacer.
       - Borramos nuestras tablas de pgadmin y probamos nuestras migraciones y ejecutamos npm run migrations:run si ocurre un error cambiar los datos dentro de ".env".
+
+  ## Modificando una entidad
+      - Con migraciones alterar una tabla que ya esta creada en la base de datos. Agrear modificaiones a una tabla.
+      - Generamos una nueva migracion "npm run migrations:generate add-role"
+      - Ejecutamos nuestra migración "npm run migrations:run"
