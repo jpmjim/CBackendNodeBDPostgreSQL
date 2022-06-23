@@ -90,20 +90,24 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
 
   ## ¿Qué es un ORM? Instalación y configuración de Sequelize ORM
       Un ORM es un modelo de programación que permite mapear las estructuras de una base de datos relacionales. Usaremps el ORM de Sequelize.
-	    - Instalamos el ORM "npm install --save sequelize"
-		- Drivers para PostgreSQL "npm install --save pg pg-hstore"
+	  - Instalamos el ORM "npm install --save sequelize"
+	  - Drivers para PostgreSQL "npm install --save pg pg-hstore"
 
   ## Tu primer modelo en Sequelize
-		- Vamos a ver el esquema que va tener la base de datos. Esquema de tipos en la base de datos.
+	  - Vamos a ver el esquema que va tener la base de datos. Esquema de tipos en la base de datos.
 
   ## Crear, actualizar y eliminar
-        - De datos dentro de la tabla de los usuarios.
+      - De datos dentro de la tabla de los usuarios.
         
   ## Cambiando la base de datos a MySQL
-        - Cambiamos la base de datos a MySQL. Donde crearemos un contenedor donde correra MySQL.
-        - Creamos nuestro volumen para datos de myslq y lo ignoramos.
-        - De forma grafica utilizaremos phpmyadmin.
-        - Levantamo nuestros servicios docker-compose up -d mysql y docker-compose up -d phpmyadmin.
-        - Para conectarnos con mysql debemos instalar el driver de mysql "npm install --save mysql2" cambios el puerto y el usuario en ".env" y en libs/sequilize.js el motor postgres por mysql.
-        -ejecutamos nuestro project con npm run start o dev.
-        - revisamos en insomnia y localhost:8080/phpmyadmin.
+      - Cambiamos la base de datos a MySQL. Donde crearemos un contenedor donde correra MySQL.
+      - Creamos nuestro volumen para datos de myslq y lo ignoramos.
+      - De forma grafica utilizaremos phpmyadmin.
+      - Levantamo nuestros servicios docker-compose up -d mysql y docker-compose up -d phpmyadmin.
+      - Para conectarnos con mysql debemos instalar el driver de mysql "npm install --save mysql2" cambios el puerto y el usuario en ".env" y en libs/sequilize.js el motor postgres por mysql.
+      -ejecutamos nuestro project con npm run start o dev.
+      - revisamos en insomnia y localhost:8080/phpmyadmin.
+  ## ¿Qué son las migraciones? Migraciones en Sequelize ORM
+      - Las migraciones son una forma de crear una base de datos con un esquema especifico. Las migraciones de base de datos comunes en los frameworks de programación como MySQL, SQLite, PostgreSQL, Oracle, etc.
+      - Correr migraciones instalamos el ORM "npm install --save-dev sequelize-cli" como dependencia de desarrolo y un archivo de ".sequelizerc".
+
