@@ -90,8 +90,9 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
 
   ## ¿Qué es un ORM? Instalación y configuración de Sequelize ORM
       Un ORM es un modelo de programación que permite mapear las estructuras de una base de datos relacionales. Usaremps el ORM de Sequelize.
-			- Instalamos el ORM "npm install --save sequelize"
-			- Drivers para PostgreSQL "npm install --save pg pg-hstore"
+	    - Instalamos el ORM "npm install --save sequelize"
+		- Drivers para PostgreSQL "npm install --save pg pg-hstore"
   ## Tu primer modelo en Sequelize
-			- Vamos a ver el esquema que va tener la base de datos. Esquema de tipos en la base de datos.
-			
+		- Vamos a ver el esquema que va tener la base de datos. Esquema de tipos en la base de datos.
+  ## Crear, actualizar y eliminar
+        - De datos.
