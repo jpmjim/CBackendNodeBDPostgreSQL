@@ -95,4 +95,4 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
   ## Tu primer modelo en Sequelize
 		- Vamos a ver el esquema que va tener la base de datos. Esquema de tipos en la base de datos.
   ## Crear, actualizar y eliminar
-        - De datos.
+        - De datos dentro de la tabla de los usuarios.
