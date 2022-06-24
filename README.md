@@ -128,3 +128,8 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - Una tabla puede tener una relacion con otra tabla.
       - Usaremos customer para conectarlo con un usuario.
       - Comandos debemos usar son "npm run migrations:generate create-customers" para la migracion de nuestra tabla, "npm run migrations:run" para correr las migraciones
+
+  ## Resolviendo relacion unica dentro de la tabla customer a user
+      - No deberia pasar que dos clientes esten relaciones relacionados al mismo usuario.
+      - Decimos que el userId sea unico lo cual generamos una nueva migracion con los cambios de la tabla "npm run migrations:generate change-user-id" el cual modificaremos la columna.
+      - Corremos la migracion. "npm run migrations:run"
