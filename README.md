@@ -142,4 +142,10 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
 
   ## Resolviendo relaciones uno a muchos
       - Resolviendo la logica y las asociaciones de producto y categoria.
-      - 
+
+  ## Órdenes de compra "Config de la relacion muchos a muchos"
+      - Un producto pueda pertenecer a muchas ordenes de compra y una compra pueda tener muchos productos con la regla "belongsToMany" con la cual tendremos una join table clase intermedia que tiene referencia hacia los dos lados.
+      - Generamos nuestra migracion "npm run migrations:generate order".
+      - Corremos nuestra migracion "npm run migrations:run".
+      - Logramos establecer la orden de compra que pertenece a un cliente.
+
