@@ -133,3 +133,6 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - No deberia pasar que dos clientes esten relaciones relacionados al mismo usuario.
       - Decimos que el userId sea unico lo cual generamos una nueva migracion con los cambios de la tabla "npm run migrations:generate change-user-id" el cual modificaremos la columna.
       - Corremos la migracion. "npm run migrations:run"
+
+  ## Resolviendo las relaciones uno a uno con sus asociaciones
+      - Resolver de forma anidada esta relacion, el alias muy importante para resolver la asociacion. Sabemos hacer relaciones uno a uno de forma bidireccional.
