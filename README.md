@@ -139,3 +139,7 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
 
   ## Relaciones uno a muchos 1-N "hasMAny"
       - Generamos la migracion de las tablas de products y category "npm run migrations:generate  products" y arracamos nuestro migracion "npm run migrations:run".
+
+  ## Resolviendo relaciones uno a muchos
+      - Resolviendo la logica y las asociaciones de producto y categoria.
+      - 
