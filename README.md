@@ -123,3 +123,8 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - Con migraciones alterar una tabla que ya esta creada en la base de datos. Agrear modificaiones a una tabla.
       - Generamos una nueva migracion "npm run migrations:generate add-role"
       - Ejecutamos nuestra migración "npm run migrations:run"
+  
+  ## Relaciones uno a uno
+      - Una tabla puede tener una relacion con otra tabla.
+      - Usaremos customer para conectarlo con un usuario.
+      - Comandos debemos usar son "npm run migrations:generate create-customers" para la migracion de nuestra tabla, "npm run migrations:run" para correr las migraciones
