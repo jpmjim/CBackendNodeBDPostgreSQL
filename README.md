@@ -153,3 +153,7 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
       - Una orden poder tener muchos productos y que muchos productos pertencer a una orden resolverse con una tabla intermedia.
       - Creamos la migracion de nuestra tabla intermedia "npm run migrations:generate order-product".
       - ejecutamos nuestra migracion "npm run migrations:run".
+
+  ## Resolviendo relaciones muchos a muchos
+      - Conectando las tablas de productos y ordenes de compra.
+      - El total esta siendo corrido desde node para datos muy pequeños y no desde una consulta sql que si necesitamos por ejemplo lo que contiene un chat. 
