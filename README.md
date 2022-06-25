@@ -156,4 +156,8 @@ Curso de Backend con Node.js: Base de Datos con PostgreSQL
 
   ## Resolviendo relaciones muchos a muchos
       - Conectando las tablas de productos y ordenes de compra.
-      - El total esta siendo corrido desde node para datos muy pequeños y no desde una consulta sql que si necesitamos por ejemplo lo que contiene un chat. 
+      - El total esta siendo corrido desde node para datos muy pequeños y no desde una consulta sql que si necesitamos por ejemplo lo que contiene un chat.
+
+  # Paginación con "limit y offset" es dinamico
+      - Limit el numero de registros que queremos que se muestren en cada pagina.
+      - Offset es como un apuntador, el cual comienza en cero o indicando de donde queremos que comienze a mostrar.
